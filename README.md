@@ -1,4 +1,14 @@
-# Vimscript-Fundamenta
+# Vimscript Fundamental
+* String
+```vim
+"matchstr
+"match a git hash like '981ff54 init'
+function! s:GetGitHash(gitlog)
+  let gitlog = a:gitlog
+  let hash = matchstr(gitlog, '^[0-9a-z]\{7,\}\s')
+  return hash
+endfunction
+```
 * Dictionary
 ```vim
 "multiple line dictionary
