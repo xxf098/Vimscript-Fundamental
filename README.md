@@ -9,6 +9,20 @@ function! s:GetGitHash(gitlog)
   return hash
 endfunction
 ```
+* Variable
+```vim
+```
+* Array
+```vim
+let hashes = [
+  \'b68d138',
+  \'c266945',
+  \'1af7d56'
+  \]
+let hashes = add(hashes, 'a2dabfc')
+let hash1 = hash[0]
+let hash2 = get(hash, 1, '')
+```
 * Dictionary
 ```vim
 "multiple line dictionary
@@ -36,3 +50,4 @@ function! s:GetGitLogs() abort
   return output
 endfunction
 ```
+*Regex
