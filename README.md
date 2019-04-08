@@ -29,10 +29,13 @@ let hash2 = get(hash, 1, '')
 let user = {
 \'username': 'name',
 \'age': '20',
-\'gender': 'male'
+\'gender': 'male',
+\'interests': ['something interesting']
 \}
 "set dictionary item
 let user.username = 'newname'
+" nested dictionary access
+let interest = user.interests[0]
 "iterate dictionary
 for item in items(user)
   let [key, value] = item
