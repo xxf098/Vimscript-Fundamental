@@ -42,6 +42,21 @@ for item in items(user)
   echom key ': ' . value
 endfor
 ```
+* Condition
+```vim
+  let condition1 = 0
+  let condition2 = 1
+  if !condition1
+    echom 'negate condition'
+  endif
+  if condition1 || condition2
+    echom 'or condition'
+  endif
+  if !condition1 && condition2
+    echom "and condition"
+  endif
+  " TODO: =~?
+```
 * Function
 ```vim
 "default parameters
