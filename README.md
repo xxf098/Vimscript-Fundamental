@@ -78,4 +78,23 @@ function! s:GetGitLogs() abort
   return output
 endfunction
 ```
-*Regex
+* Regex
+```vim
+"default is magic mode
+" $ end of line
+" ^ start of line
+" \(\) group
+" \s space
+" * zero or more times
+" \+ one or more times
+" \? zero or one time
+" \{2,\} 2 or more times
+" \{2,4} only match 2,3,4 times
+" . match any character
+" [a-z] match characters from a to z
+" \| or
+" \s space
+" \n new line
+" \. match .
+" \\ match \
+```
