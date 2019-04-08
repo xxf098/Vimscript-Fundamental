@@ -42,6 +42,16 @@ for item in items(user)
   echom key ': ' . value
 endfor
 ```
+* Function
+```vim
+"default parameters
+function! s:defaultParams(param1, ...)
+  "get param1 value
+  let param1 = a:param1
+  "set default value for param2
+  let param2 = get(a:, 1, '')
+endfunction
+```
 * Run system command
 ```vim
 function! s:GetGitLogs() abort
