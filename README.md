@@ -81,6 +81,7 @@ endfunction
 * Regex
 ```vim
 "default is magic mode
+" find more here: http://vimdoc.sourceforge.net/htmldoc/pattern.html
 " $ end of line
 " ^ start of line
 " \(\) group
