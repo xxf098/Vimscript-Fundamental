@@ -99,3 +99,10 @@ endfunction
 " \. match .
 " \\ match \
 ```
+* File
+```vim
+let filename = 'names.data'
+let lines = readfile(filename)
+let files = system('ls -thla')
+call writefile(files, 'files.data')
+```
