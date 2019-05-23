@@ -63,6 +63,8 @@ endfor
 function! s:defaultParams(param1, ...)
   "get param1 value
   let param1 = a:param1
+  "get params length
+  let param_length = a:0
   "set default value for param2
   let param2 = get(a:, 1, '')
 endfunction
