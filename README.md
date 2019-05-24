@@ -69,8 +69,13 @@ function! s:defaultParams(param1, ...)
   let param2 = get(a:, 1, '')
 endfunction
 ```
-* Command
+* execute
 ```vim
+"execute command
+execute "normal! gg"
+"execute dynamic command
+let line_num = 10
+execute "normal! " . line_num . "gg"
 ```
 * Run system command
 ```vim
