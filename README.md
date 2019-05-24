@@ -69,6 +69,9 @@ function! s:defaultParams(param1, ...)
   let param2 = get(a:, 1, '')
 endfunction
 ```
+* Command
+```vim
+```
 * Run system command
 ```vim
 function! s:GetGitLogs() abort
